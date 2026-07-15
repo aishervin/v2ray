@@ -609,7 +609,7 @@
             { id: "quic", checked: false }
         ];
         
-        const DEFAULT_SOURCES = [
+        const DEFAULT_SOURCES =[
     "https://raw.githubusercontent.com/shervinofpersia/Config/refs/heads/main/ProxyNg.json",
     "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/Vless-Reality-White-Lists-Rus-Mobile.txt",
     "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/Vless-Reality-White-Lists-Rus-Mobile-2.txt",
@@ -618,7 +618,7 @@
     "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS.txt",
     "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/BLACK_SS+All_RUS.txt",
     "https://raw.githubusercontent.com/Mosifree/-FREE2CONFIG/refs/heads/main/FRAGMENT",
-    "https://raw.githubusercontent.com/ShadowException/VPN/refs/heads/main/configs/VPN-cat",
+    "",
     "https://raw.githubusercontent.com/F0rc3Run/F0rc3Run/refs/heads/main/splitted-by-protocol/vless.txt",
     "https://raw.githubusercontent.com/barry-far/V2ray-config/refs/heads/main/Sub1.txt",
     "https://raw.githubusercontent.com/barry-far/V2ray-Config/refs/heads/main/Sub2.txt",
@@ -629,7 +629,6 @@
     "https://raw.githubusercontent.com/Pawdroid/Free-servers/refs/heads/main/sub",
     "https://raw.githubusercontent.com/mfuu/v2ray/refs/heads/main/v2ray.txt",
     "https://raw.githubusercontent.com/ermaozi/get_subscribe/refs/heads/main/subscribe/v2ray.txt",
-    "https://empty-mouse-fbb7.alizareh4024.workers.dev/sync?sub=%D8%B3%D9%88%D8%B3%D9%85%D8%A7%D8%B1%F0%9F%A6%8E",
     "https://raw.githubusercontent.com/pytimusprime/FreeV2ray/refs/heads/main/all_servers.txt",
     "https://raw.githubusercontent.com/ThomasJasperthecat/sub/refs/heads/main/sublist1.txt",
     "https://raw.githubusercontent.com/masir-sefid/Sub/refs/heads/main/@Masir_Sefid.txt",
@@ -906,7 +905,7 @@
                 updateProgress(60, 'EXTRACTING MATRICES');
                 logTerm('Decrypting & extracting V2Ray URIs...', 'scan');
                 
-                await new Promise(r => setTimeout(r, 600)); 
+                await new Promise(r => setTimeout(r, 300)); 
 
                 const extractedURIs = extractURIs(combinedData);
                 logTerm(`Discovered ${extractedURIs.length} raw config sequences.`, 'info');
